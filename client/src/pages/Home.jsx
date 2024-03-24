@@ -43,7 +43,7 @@ export default function Home() {
         <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 z-50">
           <div className="bg-white p-8 rounded-lg shadow-md text-gray-600">
             <h2 className="text-2xl font-bold mb-4">Join Our WhatsApp Community</h2>
-            <p className="text-lg mb-4">Join HealthRepublicMedia's WhatsApp community for exclusive updates on health and wellness tips, expert insights, and the latest trends in nutrition, fitness, mental health, and more. Stay informed and connected with Health Republic Media today!
+            <p className="text-lg mb-4">Join HealthRepublicMedia's WhatsApp community for exclusive updates on health and wellness tips, expert insights, and the latest trends in nutrition, fitness, mental health, and more.
 </p>
             <div className="flex justify-between">
               <button className="bg-green-500 text-white px-4 py-2 rounded-md mr-2 hover:bg-green-600" onClick={handleJoin}>Join Now</button>
