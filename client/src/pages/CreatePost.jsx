@@ -12,8 +12,8 @@ import { useState } from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { useNavigate } from 'react-router-dom';
-// import Social1 from '../components/Social1';
-// import Adsfooter from '../components/Adsfooter';
+import Social1 from '../components/Social1';
+import Adsfooter from '../components/Adsfooter';
 
 export default function CreatePost() {
   const [file, setFile] = useState(null);
@@ -87,8 +87,8 @@ export default function CreatePost() {
   return (
     
     <div className='p-3 max-w-3xl mx-auto min-h-screen  '>
-      {/* <Adsfooter />
-      <Social1 /> */}
+      <Adsfooter />
+      <Social1 />
       <h1 className='text-center text-3xl my-7 font-semibold'>Create a post</h1>
       <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
         <div className='flex flex-col gap-4 sm:flex-row justify-between'>
@@ -108,10 +108,10 @@ export default function CreatePost() {
             }
           >
             <option value='uncategorized'>Select a category</option>
-            <option value='visa-sponsorships'>Visa-sponsorships</option>
+            {/* <option value='visa-sponsorships'>Visa-sponsorships</option>
             <option value='remotejobs'>Remotejobs</option>
             <option value='Scholarships'>Scholarships</option>
-            <option value='job-listings'>Job-listings</option>
+            <option value='job-listings'>Job-listings</option> */}
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
@@ -166,7 +166,7 @@ export default function CreatePost() {
           </Alert>
         )}
       </form>
-      {/* <Adsfooter /> */}
+      <Adsfooter />
     </div>
   );
 }

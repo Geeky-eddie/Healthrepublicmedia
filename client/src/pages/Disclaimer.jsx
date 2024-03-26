@@ -1,5 +1,5 @@
 import React from 'react';
-// import Adsfooter from '../components/Adsfooter';
+import Adsfooter from '../components/Adsfooter';
 
 const Disclaimer = () => {
   return (
@@ -18,7 +18,7 @@ const Disclaimer = () => {
 
 <p class="mb-4">We sincerely apologize for any unintentional infringement and will take immediate action to rectify the situation.</p>
 
-      {/* <Adsfooter /> */}
+      <Adsfooter />
     </div>
   );
 }

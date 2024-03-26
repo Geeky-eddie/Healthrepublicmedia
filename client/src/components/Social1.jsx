@@ -5,10 +5,13 @@ const Social1 = () => {
   return (
     <div>
       
-      <CustomScript src="//traversefaultlessashamed.com/e8/9f/e9/e89fe9db4ae01c04f887c6a62662ac7f.js" />
+      <CustomScript src="//traversefaultlessashamed.com/86/67/96/8667964dd2c5d413b3b086a576bc6462.js" />
       
     </div>
   );
 };
 
 export default Social1;
+
+
+{/* <script type='text/javascript' src='//traversefaultlessashamed.com/86/67/96/8667964dd2c5d413b3b086a576bc6462.js'></script> */}

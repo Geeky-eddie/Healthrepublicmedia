@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import CallToAction from '../components/CallToAction';
 import { useEffect, useState } from 'react';
 import PostCard from '../components/PostCard';
-// import Adsfooter from '../components/Adsfooter';
-// import Nativead from '../components/Nativead';
+import Adsfooter from '../components/Adsfooter';
+import Nativead from '../components/Nativead';
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -55,9 +55,9 @@ export default function Home() {
 
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto text-center'>
         
-      {/* <Adsfooter />
       <Adsfooter />
-      <Nativead /> */}
+      <Adsfooter />
+      <Nativead />
         
       <h1 class='text-4xl font-bold lg:text-6xl'>Welcome to Health Republic Media</h1>
 <p class="mt-4 text-gray-600 text-sm sm:text-base">
@@ -94,8 +94,8 @@ Explore a healthier lifestyle, discover wellness tips, and connect with a commun
           </div>
         )}
       </div>
-      {/* <Nativead />
-      <Adsfooter /> */}
+      <Nativead />
+      <Adsfooter />
     </div>
   );
 }

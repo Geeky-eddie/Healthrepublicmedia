@@ -1,14 +1,14 @@
 import React from 'react';
-// import Adsfooter from '../components/Adsfooter';
-// import Nativead from '../components/Nativead';
+import Adsfooter from '../components/Adsfooter';
+import Nativead from '../components/Nativead';
 
 export default function About() {
   return (
     <div className='min-h-screen flex items-center justify-center'>
       <div className='max-w-2xl mx-auto p-3 text-center'>
         
-      {/* <Adsfooter />
-      <Nativead /> */}
+      <Adsfooter />
+      <Nativead />
         <div>
   <h1 className='text-3xl font-semibold text-center my-7'>
     Welcome to HealthRepublicMedia
@@ -41,7 +41,7 @@ export default function About() {
   </a>
 </div>
 
-        {/* <Adsfooter /> */}
+        <Adsfooter />
       </div>
       
     </div>

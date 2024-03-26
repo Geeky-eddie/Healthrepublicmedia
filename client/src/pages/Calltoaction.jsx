@@ -1,15 +1,15 @@
 import React from 'react'
 import CallToAction from '../components/CallToAction'
-// import Nativead from '../components/Nativead'
-// import Adsfooter from '../components/Adsfooter'
+import Nativead from '../components/Nativead'
+import Adsfooter from '../components/Adsfooter'
 
 const Calltoaction = () => {
   return (
     <div>
         
          <CallToAction />
-         {/* <Nativead />
-         <Adsfooter /> */}
+         <Nativead />
+         <Adsfooter />
     </div>
   )
 }

@@ -18,11 +18,12 @@ import Category from './pages/Category';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/Terms";
 import Disclaimer from "./pages/Disclaimer";
-// import Adsheader from "./components/Adsheader";
-// import Adsfooter from "./components/Adsfooter";
+import Adsheader from "./components/Adsheader";
+import Adsheader2 from "./components/Adsheader2";
+import Adsfooter from "./components/Adsfooter";
 import Calltoaction from "./pages/Calltoaction";
-// import Native2 from "./components/Native2";
-// import Adsfooter2 from "./components/Adsfooter2";
+import Native2 from "./components/Native2";
+import Adsfooter2 from "./components/Adsfooter2";
 
 
 const App = () => {
@@ -31,8 +32,9 @@ const App = () => {
     <ScrollToTop />
     <Header />
     
-    {/* <Adsheader />
-    <Adsfooter /> */}
+    <Adsheader />
+    <Adsheader2 />
+    <Adsfooter />
     
       <Routes> 
           <Route path="/" element={< Home/>} />
@@ -59,8 +61,8 @@ const App = () => {
           <Route path="/disclaimer" element={< Disclaimer/>} />
           <Route path="/call-to-action" element={< Calltoaction/>} />
       </Routes> 
-      {/* <Adsfooter2 />
-      <Native2 /> */}
+      <Adsfooter2 />
+      <Native2 />
      
       <Footer />
      
