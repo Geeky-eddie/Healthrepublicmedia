@@ -45,17 +45,17 @@ export default function FooterCom() {
     <Footer.Title title='Legal' />
     <Footer.LinkGroup col>
         <Link to="/privacy-policy">
-        <Footer.Link target='_blank' rel='noopener noreferrer'>
+        <Footer.Link target='_blank' href='/privacy-policy' rel='noopener noreferrer'>
         Privacy Policy
       </Footer.Link>
         </Link>
         <Link to="/terms">
-            <Footer.Link target='_blank' rel='noopener noreferrer'>
+            <Footer.Link target='_blank' href='/terms' rel='noopener noreferrer'>
         Terms &amp; Conditions
       </Footer.Link>
         </Link>
         <Link to="/disclaimer">
-            <Footer.Link target='_blank' rel='noopener noreferrer'>
+            <Footer.Link target='_blank' href='/disclaimer' rel='noopener noreferrer'>
         Check out our Disclaimer
       </Footer.Link>
         </Link>
