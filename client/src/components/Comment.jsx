@@ -5,18 +5,27 @@ import { useSelector } from 'react-redux';
 import { Button, Textarea } from 'flowbite-react';
 import { set } from 'mongoose';
 
+const anonymousUser = {
+  username: 'Anonymous',
+  profilePicture: '/2hr.png', // Provide a path to your custom image
+};
+
 export default function Comment({ comment, onLike, onEdit, onDelete }) {
-  const [user, setUser] = useState({});
   const [isEditing, setIsEditing] = useState(false);
   const [editedContent, setEditedContent] = useState(comment.content);
   const { currentUser } = useSelector((state) => state.user);
+
+  const user = comment.userId ? { username: comment.userId, profilePicture: '/2hr.png' } : anonymousUser;
+
   useEffect(() => {
     const getUser = async () => {
       try {
-        const res = await fetch(`/Api/user/${comment.userId}`);
-        const data = await res.json();
-        if (res.ok) {
-          setUser(data);
+        if (comment.userId) { // Check if comment.userId is defined
+          const res = await fetch(`/Api/user/${comment.userId}`);
+          const data = await res.json();
+          if (res.ok) {
+            setUser(data);
+          }
         }
       } catch (error) {
         console.log(error.message);
@@ -24,6 +33,7 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
     };
     getUser();
   }, [comment]);
+  
 
   const handleEdit = () => {
     setIsEditing(true);

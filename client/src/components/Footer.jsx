@@ -2,7 +2,7 @@ import React from 'react'
 import { Footer } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import {BsFacebook, BsTwitter, BsInstagram, BsWhatsapp, BsTiktok} from 'react-icons/bs';
-import logo from "../../public/2hr.png";
+import logo from "/2hr.png";
 
 export default function FooterCom() {
   return (
